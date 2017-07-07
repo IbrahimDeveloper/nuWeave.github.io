@@ -1,0 +1,98 @@
+/* STYLING THE DADY OF THE TWO COLUMNS */
+.columns-dady {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 3px solid #cacbce;
+  width: 70%;
+  margin: auto;
+  padding-left: 15PX;
+}
+
+.column {
+}
+/* STYLING THE SIDE COLUMN */
+.side-columns {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 2;
+  margin-right: auto;
+}
+
+.side-title h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.side-columns ul {
+  padding-left: 20px;
+}
+
+.side-columns li {
+  border-bottom: 1px solid #cacbce;
+}
+
+.side-content a {
+  text-decoration: none;
+  color: black;
+}
+/* STYLING THE MAIN COLUMN */
+.main-column {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* styling the subcolumns */
+.sub-column1,
+.sub-column2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* styling the flex items inside the main-column ---> sub-column1 */
+
+.sub-column1 .subcolumn-flexitems {
+  flex-grow: 1;
+}
+
+/* Styling the currently selected page */
+
+#currently-selected {
+  border-bottom: 3px solid black;
+  font-weight: 700;
+}
+
+
+/* Mobile version of the shop */
+
+@media screen and (max-width: 959px) {
+
+  .main-column {
+    flex-direction: row;
+  }
+  .sub-column2,
+  .sub-column1 {
+    flex-direction: column;
+    flex-grow: 0;
+  }
+
+  .side-columns ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .side-columns ul li {
+    padding-right: 7px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .columns-dady {
+    width: 100%;
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NU | WEAVE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link type="text/css" rel="stylesheet" href="../style.css">
+    <link type="text/css" rel="stylesheet" href="../flex.css">
+    <link type="text/css" rel="stylesheet" href="../asia-style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" style="height: 65px;" id="logo">nuWEAVE</a>
+        <a href="#about" style="height: 65px;" class="margin-top">ABOUT</a>
+        <a href="contact.html#body" style="height: 65px;">CONTACT</a>
+        <a href="index.html" style="height: 65px;">HOME</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction();">&#9776;</a>
+      </nav>
+    </header>
+    <div class="banner">
+      <img src="..\img\fashion.jpg">
+      <blockquote  class="caption">
+        <p>Muslim Fashion<br>is the new trend.</p>
+      </blockquote>
+    </div>
+    <div class="main-content">
+      <div class="margin-problems-fix">
+        <a href="#asia"><p>CLOTH</p></a>
+      </div>
+      <div class="margin-top-larger-screen">
+        <a href="../food.html#hoved-innhold"><p>FOOD</p></a>
+      </div>
+      <div class="margin-top-larger-screen">
+        <a href="../cars.html#hoved-innhold"><p>CARS</p></a>
+      </div>
+    </div>
+    <h2 class="subtitel">CLOTH - MARKET</h2>
+    <div class="sep"></div>
+    <div class="columns-dady">
+      <div class="side-columns">
+      <div class="side-title"><h3>&#9776; Categories</h2></div>
+      <div class="side-content column" id="hoved-innhold">
+        <ul>
+          <li><a href="../asia.html#hoved-innhold">Cars</a></li>
+          <li><a href="houses.html#hoved-innhold">Houses</a></li>
+          <li><a href="brands.html#hoved-innhold">Brands</a></li>
+          <li><a href="lions.html#hoved-innhold">Motorsycles</a></li>
+          <li><a href="king.html#hoved-innhold">Lions</a></li>
+          <li id="currently-selected"><a href="#something">Asads</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="main-column column">
+        <div class="sub-column1">
+        <div class="subcolumn-flexitems">
+          <img src="../img/orange-jacket.jpg">
+        </div>
+        <div class="subcolumn-flexitems">
+          <img src="../img/green-jacket.jpg">
+        </div>
+        <div class="subcolumn-flexitems">
+          <img src="../img/red-jacket.jpg">
+        </div>
+      </div>
+
+      <div class="sub-column2">
+      <div class="subcolumn-flexitems">
+        <img src="../img/orange-jacket.jpg">
+      </div>
+      <div class="subcolumn-flexitems">
+        <img src="../img/green-jacket.jpg">
+      </div>
+      <div class="subcolumn-flexitems">
+        <img src="../img/red-jacket.jpg">
+      </div>
+    </div>
+      </div>
+      <div></div>
+    </div>
+    <footer>
+      <p>&#9400; copyright 2017, all rights reserved.</p>
+    </footer>
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        var y = document.getElementById("search-field");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+            y.style.display = "none";
+        }
+      }
+      function searchBar() {
+        var x = document.getElementById("search-field");
+        if (x.className === "search") {
+            x.className += " searche";
+        }else {
+          x.className = "search";
+        }
+
+
+      }
+    </script>
+  </body>
+</html>

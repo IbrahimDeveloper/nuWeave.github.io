@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NU | WEAVE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="flex.css">
+  </head>
+  <body>
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" style="height: 65px;" id="logo">nuWEAVE</a>
+        <a href="#about" style="height: 65px;" class="margin-top">ABOUT</a>
+        <a href="#contact" style="height: 65px;">CONTACT</a>
+        <a href="index.html" style="height: 65px;">HOME</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction();">&#9776;</a>
+      </nav>
+    </header>
+    <div class="banner">
+      <img src="img\fashion.jpg">
+      <blockquote  class="caption">
+        <p>Muslim Fashion<br>is the new trend.</p>
+      </blockquote>
+    </div>
+    <div class="main-content">
+      <div class="margin-problems-fix">
+        <a href="asia.html#hoved-innhold"><p>CLOTH</p></a>
+      </div>
+      <div class="margin-top-larger-screen">
+        <a href="food.html#hoved-innhold"><p>FOOD</p></a>
+      </div>
+      <div class="margin-top-larger-screen">
+        <a href="cars.html#hoved-innhold"><p>CARS</p></a>
+      </div>
+    </div>
+    <form action="index.html" method="post" class="the-form" id="body">
+      <h1 style="text-align: center; font-family: sans-serif;">Reach out</h2>
+      <fieldset>
+          <legend><span class="number">1</span>Your basic Info</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="country">Country:</label>
+          <select id="country" name="user_country">
+           <optgroup label="Countrys">
+              <option value="norway">Norway, Oslo</option>
+              <option value="america">America, Washington DC</option>
+              <option value="somalia">Somalia, Muqadisho</option>
+              <option value="egypt">Egypt, Cairo</option>
+          </optgroup>
+          </select>
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="number">2</span>Your Feedback</legend>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="user_comment"></textarea>
+        <button type="submit" id="button">Submit</button>
+      </fieldset>
+    </form>
+    <footer>
+      <p>&#9400; copyright 2017, all rights reserved.</p>
+    </footer>
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        var y = document.getElementById("search-field");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+            y.style.display = "none";
+        }
+      }
+      function searchBar() {
+        var x = document.getElementById("search-field");
+        if (x.className === "search") {
+            x.className += " searche";
+        }else {
+          x.className = "search";
+        }
+
+
+      }
+    </script>
+  </body>
+</html>

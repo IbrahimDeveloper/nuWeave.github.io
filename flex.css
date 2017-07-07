@@ -1,0 +1,124 @@
+@media screen and (min-width: 739px){
+
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-content .margin-problems-fix {
+
+  }
+  .margin-top-larger-screen {
+    margin-top: -10px;
+  }
+  .main-content div {
+    width: 33.333%;
+  }
+
+
+}
+
+@media screen and (min-width: 583px){
+
+  .topnav a{
+    float: right;
+  }
+  .topnav #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 812px) {
+  .secondary-content div {
+    width: 30%;
+    background-color: #d6d4d4
+    border: 2px solid red;
+  }
+  .secondary-content {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  figure {
+    top: -35px;
+    right: -60px;
+    width: 35px;
+  }
+  .second {
+    margin-top: 100px;
+  }
+
+  .secondary-content .collection-images {
+    border: 5px solid white;
+    height: 100%;
+  }
+
+  .banner .caption {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    color: #ccc;
+    font-size: 30px;
+}
+
+}
+
+@media screen and (max-width: 839px) {
+  .the-form {
+    width: 100%;
+  }
+}
+
+.main-content:nth-child(1) {
+  order: -1;
+}
+
+
+@media screen and (max-width: 872px) {
+  .secondary-content {
+    width: 100%;
+  }
+
+  figcaption {
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(214, 70, 99, 0.5);
+    padding-left: 10px;
+}
+
+figure {
+    top: -23px;
+    right: -47px;
+    width: 20px;
+}
+}
+
+@media screen and (max-width: 793px) {
+
+  figure {
+  top: -30px;
+  right: -40px;
+  width: 30px;
+}
+
+}
+
+@media screen and (max-width: 355px) {
+  .banner .caption {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: #ccc;
+    font-size: 10px;
+}
+}
+
+
+/* styling the secondary-content second column */
